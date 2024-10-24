@@ -5,17 +5,13 @@ const EventDetails = ({ details, swags }) => {
         <h2 className="font-bold text-2xl">Details</h2>
         <div className="my-2 text-[#AEAEAE] space-y-4 prose lg:prose-lg max-w-none">
           <p className="">{details}</p>
-
-          <ul className="">
-            {swags.map((item, index) => {
-              return <li key={index}>🎉 {item}</li>;
-            })}
-            {/* <li>🎉 Free Tshirt</li>
-            <li>🕹️ Networking</li>
-            <li>🎯 Networking</li>
-            <li>📌 Free Foods</li>
-            <li>🚀 Free Wifi</li> */}
-          </ul>
+          {swags && (
+            <ul className="">
+              {swags.map((item, index) => {
+                return <li key={index}>🎉 {item}</li>;
+              })}
+            </ul>
+          )}
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import SignInOut from "../auth/SigninOut";
 
 const Navbar = () => {
   return (
@@ -33,6 +34,9 @@ const Navbar = () => {
             >
               Contact Us
             </Link>
+          </li>
+          <li>
+            <SignInOut />
           </li>
         </ul>
       </div>
